@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+ 
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          This is the variable from .env file: {window._env_ && window._env_.TEST_ENV_VARIABLE && window._env_.TEST_ENV_VARIABLE}
         </a>
       </header>
     </div>

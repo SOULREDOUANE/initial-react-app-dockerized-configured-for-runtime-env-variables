@@ -2,7 +2,9 @@ trigger:
 - main
 
 pool:
-  vmImage: windows-latest
+  name: default # This is your agent pool name
+  demands:
+    - agent.name -equals first-agent # This specifies your agent
 
 jobs:
 - job: InstallNode

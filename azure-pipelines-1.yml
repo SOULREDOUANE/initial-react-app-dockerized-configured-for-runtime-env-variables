@@ -4,7 +4,7 @@ trigger:
 pool:
   name: default # This is your agent pool name
   demands:
-    - agent.name -equals second-agent # This specifies your agent
+    - agent.name -equals third-agent # This specifies your agent
 
 jobs:
 - job: InstallNode

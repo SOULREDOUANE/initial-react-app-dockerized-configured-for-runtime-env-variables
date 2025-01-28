@@ -14,14 +14,3 @@ jobs:
       versionSpec: '18.x'
     displayName: 'Install Node.js'
 
-- job: Install
-  dependsOn: InstallNode
-  steps:
-  - script: npm install
-    displayName: 'npm install'
-
-- job: Build
-  dependsOn: Install
-  steps:
-  - script: npm run build
-    displayName: 'npm build'
